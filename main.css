@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-primary: #ff5040;
+    --color-primary-light: #ffcdcd;
+    --color-primary-dark: #ff1300;
+    --color-grey-light: #f6f6f6;
+    --color-grey-dark: #eee;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Inter", sans;
+    background: white;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header p {
+    font-weight: 600;
+}
+
+header p span {
+    font-weight: 200;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    background: linear-gradient(#ff504088, #ff504088),url("https://cdn.pixabay.com/photo/2021/03/27/14/13/trees-6128581_1280.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+nav a {
+   margin: 0 0.5rem; 
+   font-size: 4rem;
+   font-weight: 200;
+   color: white;
+}
+
+nav a.super {
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.key h1 {
+    font-size: 2.5rem;
+    width: 80%;
+}
+
+.key h1 span {
+    color: var(--color-primary);
+}
+
+form label{
+    display: block;
+    padding-top: 2rem;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    outline-width: 0;
+    padding: 1rem;
+    border: 0.25rem solid var(--color-grey-dark);
+    background: var(--color-grey-light);
+    margin-top: 0.1rem;
+}
+
+form input:focus {
+    border: 0.25rem solid var(--color-primary);
+    background: white;
+}
+
+form input.big {
+    height: 20%;
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    background: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    width: 40%;
+}
+
+.datalist {
+    width: 40%;
+    background: white;
+    z-index: 99;
+    transform: translateY(-5rem);
+}
+
+.data {
+    display: flex;
+    padding: 1rem;
+}
+
+.data--id {
+    padding: 1rem;    
+}
+
+.data--id h1 {
+    color: var(--color-primary);
+}
+
+.data--info {
+}
+
+.data--info h1 {
+    text-transform: uppercase;
+}
+
+.data--info p {
+    font-weight: 300;
+}

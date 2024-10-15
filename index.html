@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>IEDC Problem Portal</title>
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <p>IEDC <span>Saintgits</span></p>
+            <p>Idea Submission Portal <span>2024</span></p>
+        </header>
+
+        <nav>
+            <a class="super">QUESTIONS</a>
+            <a>ANSWERS</a>
+        </nav>
+
+        <main>
+            <div class="key">
+                <h1>Tell us about your <span>real-world problems</span></h1>
+                <form id="form" class="form__box">
+                    <label>QUESTION</label>
+                    <input type="text" id="title" required>
+                    <label>DESCRIPTION</label>
+                    <input type="text" id="desc" class="big" required>
+                    <input type="submit" id="submit" onsubmit="return false" value="PUBLISH">
+                    <br><br>
+                </form>
+            </div>
+
+            <div id="datalist" class="datalist">
+                <!--
+                    will be populated by firebase
+                    <div class="data">
+                    <div class="data--id">
+                    <h1 id="uid">#ID</h1>
+                    </div>
+                    <div class="data--info">
+                    <h1>Slow lift at RB</h1>
+                    <p>stairs stairs stairs...</p>
+                    </div>
+                    </div>
+                -->
+            </div>
+
+        </main>
+
+        <script defer type="module" src="script.js"></script>
+    </body>
+</html>
